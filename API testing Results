@@ -1,0 +1,146 @@
+{
+	"id": "d8a374e6-1407-4a5e-825c-42ff1b5aac4b",
+	"name": "REST API basics CRUD operations",
+	"timestamp": "2025-08-20T15:34:43.205Z",
+	"collection_id": "47272305-e8cd853b-a5c2-4fec-a860-f254b276a31e",
+	"folder_id": 0,
+	"environment_id": "0",
+	"totalPass": 3,
+	"delay": 0,
+	"persist": true,
+	"status": "finished",
+	"startedAt": "2025-08-20T15:34:41.845Z",
+	"totalFail": 1,
+	"results": [
+		{
+			"id": "d0fd6e9f-2e69-44a1-ae10-e1eaf126df83",
+			"name": "Get data",
+			"url": "http://localhost:5000/users",
+			"time": 7,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				7
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				}
+			]
+		},
+		{
+			"id": "149cf727-97ed-4f2a-bab4-7eb136a362c0",
+			"name": "Post data",
+			"url": "http://localhost:5000/users",
+			"time": 4,
+			"responseCode": {
+				"code": 201,
+				"name": "Created"
+			},
+			"tests": {
+				"Successful POST request": true
+			},
+			"testPassFailCounts": {
+				"Successful POST request": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				4
+			],
+			"allTests": [
+				{
+					"Successful POST request": true
+				}
+			]
+		},
+		{
+			"id": "00d5c7dc-3666-474e-8099-6d8b79ebba26",
+			"name": "Update data",
+			"url": "http://localhost:5000/users/7de0cf96-11aa-48d3-bbf3-1ee0004d4161",
+			"time": 5,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Successful PUT request": true
+			},
+			"testPassFailCounts": {
+				"Successful PUT request": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				5
+			],
+			"allTests": [
+				{
+					"Successful PUT request": true
+				}
+			]
+		},
+		{
+			"id": "237e962a-083d-40f0-80bb-3c582ba7d25f",
+			"name": "Delete data",
+			"url": "http://localhost:5000/users/a811b491-dfff-4347-b627-29994f19d5c4",
+			"time": 3,
+			"responseCode": {
+				"code": 404,
+				"name": "Not Found"
+			},
+			"tests": {
+				"Successful DELETE request": false
+			},
+			"testPassFailCounts": {
+				"Successful DELETE request": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				3
+			],
+			"allTests": [
+				{
+					"Successful DELETE request": false
+				}
+			]
+		}
+	],
+	"count": 1,
+	"totalTime": 19,
+	"collection": {
+		"requests": [
+			{
+				"id": "d0fd6e9f-2e69-44a1-ae10-e1eaf126df83",
+				"method": "GET"
+			},
+			{
+				"id": "149cf727-97ed-4f2a-bab4-7eb136a362c0",
+				"method": "POST"
+			},
+			{
+				"id": "00d5c7dc-3666-474e-8099-6d8b79ebba26",
+				"method": "PUT"
+			},
+			{
+				"id": "237e962a-083d-40f0-80bb-3c582ba7d25f",
+				"method": "DELETE"
+			}
+		]
+	}
+}
