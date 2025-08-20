@@ -62,8 +62,9 @@ crud-api/
 **Body (JSON):**
 ```json
 {
-  "name": "Aastha Updated",
-  "email": "aastha.@fordger.com"
+  "name": "Henry Smith",
+  "email": "hen@ry.com",
+  "age":24
 }
 ```
 
